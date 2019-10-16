@@ -1,0 +1,159 @@
+{
+	"id": "022b3fe9-4822-4f50-a33e-5b5896b9f846",
+	"name": "fotografiasGaleria",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"fa4f4216-c7b8-45df-9d87-20f68b5138d1",
+		"a83f4e97-4fc8-4738-8184-5b2610b9468c",
+		"959f98ae-96be-49bb-b7fc-3ba9c7f1cf12",
+		"7524a7e8-e41c-4bfb-9067-82201067657b"
+	],
+	"folders_order": [],
+	"protocolProfileBehavior": {},
+	"folders": [],
+	"requests": [
+		{
+			"id": "7524a7e8-e41c-4bfb-9067-82201067657b",
+			"name": "DELETE",
+			"url": "http://localhost:3000/api/foto/delete/1",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "959f98ae-96be-49bb-b7fc-3ba9c7f1cf12",
+			"name": "PUT",
+			"url": "http://localhost:3000/api/foto/update/1",
+			"description": "",
+			"data": [
+				{
+					"key": "url",
+					"value": "Estos",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "thumbnailUrl",
+					"value": "Estos",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a83f4e97-4fc8-4738-8184-5b2610b9468c",
+			"name": "POST",
+			"url": "http://localhost:3000/api/foto/new",
+			"description": "",
+			"data": [
+				{
+					"key": "id",
+					"value": "2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "url",
+					"value": "www.google.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "thumbnailUrl",
+					"value": "www.google.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "album",
+					"value": "Bonitas",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "fa4f4216-c7b8-45df-9d87-20f68b5138d1",
+			"name": "GET",
+			"url": "http://localhost:3000/api/foto/all",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		}
+	]
+}
