@@ -76,11 +76,35 @@ router.post('/new', function(req, res){
        if (err) {
          res.status(400).json({ "error": "No se pudo actualizar objeto" });
        } else {
-         res.json(modFotografias);  // req.body ===  $_POST[]
+         res.json(modFotografias);
        }
      }
    );
  }
-);// put :prdsku
+);
+
+router.delete(
+    '/delete/:fotoID',
+    function( req, res) {
+      fotoCollection = fileModel.getFotografias();
+      var fotoCodigoToDelete  = req.params.fotoID;
+      var newFotoCollection = fotoCollection.filter(
+        function(o, i){
+          return fotoCodigoToDelete !== o.id;
+        }
+      ); //filter
+      fotoCollection = newFotoCollection;
+      fileModel.setFotografias(
+        fotoCollection,
+        function (err, savedSuccesfully) {
+          if (err) {
+            res.status(400).json({ "error": "No se pudo eliminar objeto" });
+          } else {
+            res.json({"newProdsQty": fotoCollection.length});
+          }
+        }
+      );
+    }
+  );// delete
 
 module.exports = router;
