@@ -1,5 +1,5 @@
 {
-  "name": "ex10809199800030",
+  "name": "condominios",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -13,6 +13,6 @@
     "http-errors": "~1.6.3",
     "less-middleware": "~2.2.1",
     "morgan": "~1.9.1",
-    "nodemon": "^1.19.4"
+    "nodemon": "^1.19.3"
   }
 }
